@@ -63,7 +63,7 @@ class MainLayout extends React.Component {
                     <Content style={contentStyle}>
                         {this.props.children}
                     </Content>
-                    <Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by Zaidullin Albert</Footer>
+                    <Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by </Footer>
                 </Layout>
             </Layout>
         );
