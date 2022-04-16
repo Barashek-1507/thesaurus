@@ -12,8 +12,8 @@ export const authentication = () => async (dispatch) => {
     await dispatch(setUser(response.value));
 };
 
-export const login = (email, password) => async (dispatch) => {
-    const data = await logIn(email, password);
+export const login = (username, password) => async (dispatch) => {
+    const data = await logIn(username, password);
     localStorage.setItem('token', data.value.token);
     const response = await auth();
     dispatch(setUser(response.value));

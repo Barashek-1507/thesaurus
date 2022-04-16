@@ -2,7 +2,9 @@ import {Form, Input, Button, Checkbox} from 'antd';
 
 const AuthInput = (
     {
-        label
+        label,
+        value,
+        onChange,
     }) => {
     return (
         <Form.Item
