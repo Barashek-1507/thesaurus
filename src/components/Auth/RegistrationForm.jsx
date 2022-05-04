@@ -4,13 +4,13 @@ import AuthButton from "./AuthButton";
 import AuthInputPassword from "./AuthInputPassword";
 
 const RegistrationForm = () => {
-    return(
+    return (
         <AuthForm>
-            <AuthInput label="Username" />
-            <AuthInput label="Name" />
-            <AuthInput label="Lastname" />
-            <AuthInputPassword />
-            <AuthButton />
+            <AuthInput label="Username"/>
+            <AuthInput label="Name"/>
+            <AuthInput label="Lastname"/>
+            <AuthInputPassword/>
+            <AuthButton/>
         </AuthForm>
     )
 }

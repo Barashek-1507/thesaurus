@@ -1,73 +1,47 @@
-import React from 'react';
-
 import {Layout, Menu, Breadcrumb} from 'antd';
-import {
-    DesktopOutlined,
-    PieChartOutlined,
-    FileOutlined,
-    TeamOutlined,
-    UserOutlined,
-} from '@ant-design/icons';
+import {useDispatch, useSelector} from "react-redux";
+import {NavLink, useHistory} from "react-router-dom";
+import {signOut} from "../store/actions/userActions";
 
-const {Header, Content, Footer, Sider} = Layout;
-const {SubMenu} = Menu;
+const {Header, Content, Footer} = Layout;
 
-class MainLayout extends React.Component {
-    state = {
-        collapsed: false,
-        isUserLogIn: true,
-    };
-
-    onCollapse = collapsed => {
-        console.log(collapsed);
-        this.setState({collapsed});
-    };
-
-    render() {
-        const {collapsed} = this.state;
-        const isLogIn = this.state.isUserLogIn;
-        const contentStyle = this.props.centered ?
-            {
-                margin: '0 16px',
-                direction: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100%'
-            } :
-            {
-                margin: '0 16px',
-            }
-
-        return (
-            <Layout style={{minHeight: '100vh'}}>
-                <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
-                    <div className="logo"/>
-                    <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-                        <Menu.Item key="1" icon={<PieChartOutlined/>}>
+const MainLayout = ({children}) => {
+    let isAdmin = useSelector(state => state.user.isAdmin);
+    const history = useHistory();
+    const dispatch = useDispatch();
+    return (
+        <Layout className="layout" style={{minHeight: "100vh"}}>
+            <Header>
+                <div className="logo"/>
+                <Menu theme="dark" mode="horizontal">
+                    <Menu.Item key={0}>
+                        <NavLink to="/thesaurus">
                             Thesaurus
+                        </NavLink>
+                    </Menu.Item>
+                    <Menu.Item key={1}>
+                        <NavLink to="/account">
+                            My account
+                        </NavLink>
+                    </Menu.Item>
+                    <Menu.Item key={1}>
+                        <NavLink to="/signOut">
+                            Sign out
+                        </NavLink>
+                    </Menu.Item>
+                    {isAdmin &&
+                        <Menu.Item key={3}>
+                            <NavLink to="/admin">
+                                Administration
+                            </NavLink>
                         </Menu.Item>
-                        {isLogIn ? (
-                            <SubMenu key="sub1" icon={<UserOutlined/>} title="My Account">
-                                <Menu.Item key="3">Statistics</Menu.Item>
-                                <Menu.Item key="4">Setting</Menu.Item>
-                                <Menu.Item key="5">Sign out</Menu.Item>
-                            </SubMenu>
-                        ) : (
-                            <Menu.Item key="2" icon={<FileOutlined/>}>
-                                Sign in
-                            </Menu.Item>)}
-                    </Menu>
-                </Sider>
-                <Layout className="site-layout">
-                    <Header className="site-layout-background" style={{padding: 0}}/>
-                    <Content style={contentStyle}>
-                        {this.props.children}
-                    </Content>
-                    <Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by </Footer>
-                </Layout>
-            </Layout>
-        );
-    }
-}
+                    }
+                </Menu>
+            </Header>
+            <Content style={{padding: '0 50px'}}>
+                {children}
+            </Content>
+        </Layout>);
+};
 
 export default MainLayout;

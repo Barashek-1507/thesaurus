@@ -2,13 +2,13 @@ import {Form, Input} from 'antd';
 import AuthButton from "./AuthButton";
 
 const AuthInputPassword = (
-  {
-    value,
-    onChange
-  }) => {
+    {
+        value,
+        onChange
+    }) => {
     return (
         <Form.Item
-            label= "Password"
+            label="Password"
             name="password"
             rules={[
                 {
@@ -18,8 +18,8 @@ const AuthInputPassword = (
             ]}
         >
             <Input.Password
-              value={value}
-              onChange={onChange}
+                value={value}
+                onChange={onChange}
             />
         </Form.Item>
     )

@@ -1,6 +1,7 @@
 import LoginForm from "../components/Auth/LoginForm";
 import MainLayout from "./MainLayout";
-import RegistrationPage from "./RegistrationPage";
+import RegistrationForm from "./RegistrationForm";
+
 const LoginPage = () => (
     <MainLayout centered>
         <RegistrationForm/>

@@ -1,11 +1,10 @@
-import { Form } from 'antd';
+import {Form} from 'antd';
 import styles from '../../styles/authForm.module.css'
 
 const AuthForm = ({children}) => {
-  const [form] = Form.useForm();
+    const [form] = Form.useForm();
     const onSubmit = () => {
-        form.validateFields().
-          then(values => console.log(values))
+        form.validateFields().then(values => console.log(values))
     };
 
     const onFinishFailed = (errorInfo) => {

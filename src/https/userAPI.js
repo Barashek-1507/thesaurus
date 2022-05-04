@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:5433';
+const baseURL = 'http://localhost:1234';
 
 export const logIn = async (username, password) => {
     const body = JSON.stringify({username, password});
@@ -6,7 +6,7 @@ export const logIn = async (username, password) => {
         {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json-patch+json',
+                'Content-Type': 'application/json',
             },
             body,
         });

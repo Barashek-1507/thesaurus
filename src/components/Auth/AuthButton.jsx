@@ -1,7 +1,7 @@
-import { Form, Button } from 'antd';
+import {Form, Button} from 'antd';
 
 const AuthButton = () => {
-    return(
+    return (
         <Form.Item
             wrapperCol={{
                 offset: 8,
