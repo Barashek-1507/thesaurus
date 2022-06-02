@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import MainLayout from "./MainLayout";
+import AdminTable from "../components/AdminTable";
+import {getAllUsers} from "../https/userAPI";
 
 const AdministrationPage = () => {
     return(
         <MainLayout>
-            Мин главный
+            <AdminTable/>
         </MainLayout>
     )
 }

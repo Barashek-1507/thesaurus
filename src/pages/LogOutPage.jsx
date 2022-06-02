@@ -5,7 +5,10 @@ import {useDispatch} from "react-redux";
 
 const LogOutPage = () => {
     const dispatch = useDispatch();
-    useEffect(() => dispatch(signOut()), )
+    useEffect(() => {
+        dispatch(signOut())
+        window.location.reload();
+    },[])
     return(
         <Redirect to="/login" />
     )

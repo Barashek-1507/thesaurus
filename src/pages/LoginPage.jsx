@@ -6,7 +6,7 @@ import {useState} from "react";
 import {logIn} from "../https/userAPI";
 import {login} from "../store/actions/userActions";
 import {useDispatch} from "react-redux";
-import {useHistory} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
 const LoginPage = () => {
     const [username, setUsername] = useState('');
@@ -39,7 +39,7 @@ const LoginPage = () => {
         >
 
             <Form.Item
-                label="username"
+                label="Username"
                 name="username"
                 rules={[
                     {
@@ -82,6 +82,7 @@ const LoginPage = () => {
                     Submit
                 </Button>
             </Form.Item>
+            <Link to="/registration">Registration</Link>
         </Form>
     )
 }

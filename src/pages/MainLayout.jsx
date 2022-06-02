@@ -24,7 +24,7 @@ const MainLayout = ({children}) => {
                             My account
                         </NavLink>
                     </Menu.Item>
-                    <Menu.Item key={1}>
+                    <Menu.Item key={2}>
                         <NavLink to="/signOut">
                             Sign out
                         </NavLink>
@@ -38,7 +38,7 @@ const MainLayout = ({children}) => {
                     }
                 </Menu>
             </Header>
-            <Content style={{padding: '0 50px'}}>
+            <Content style={{padding: '15px 50px'}}>
                 {children}
             </Content>
         </Layout>);

@@ -10,6 +10,7 @@ import ThesaurusPage from "./pages/ThesaurusPage";
 import AccountPage from "./pages/AccountPage";
 import AdministrationPage from "./pages/AdministrationPage";
 import LogOutPage from "./pages/LogOutPage";
+import RegistrationPage from "./pages/RegistrationPage";
 
 function App() {
     const dispatch = useDispatch();
@@ -24,13 +25,13 @@ function App() {
             {!isAuth ? (
                 <Switch>
                      <Redirect from="/thesaurus" to="/login" />
+                     <Route path="/registration" component={RegistrationPage} />
                      <Route path="/login" component={LoginPage} />
                      <Redirect from="/" to="/login" />
                 </Switch>
                 )
                 : (
                     <Switch>
-                        <Route path="/login" component={LoginPage} />
                         <Route path="/main" component={Main} />
                         <Route path="/thesaurus" component={ThesaurusPage} />
                         <Route path="/account" component={AccountPage} />

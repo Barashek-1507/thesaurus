@@ -15,15 +15,15 @@ export const logIn = async (username, password) => {
 };
 
 export const signUp = async (
-    username, firstname, lastname, password,
+    username, name, lastname, password,
 ) => {
     const body = JSON.stringify({
-        username, firstname, lastname, password,
+        username, name, lastname, password,
     });
     const response = await fetch(`${baseURL}/auth/registration`, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json-patch+json',
+            'Content-Type': 'application/json',
         },
         body,
     });
@@ -33,6 +33,26 @@ export const signUp = async (
 
 export const auth = async () => {
     const response = await fetch(`${baseURL}/auth`,
-        {method: 'GET', headers: {Authorization: `Bearer ${localStorage.getItem('token')}`}});
+        {method: 'GET', headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`
+        }});
     return response.json();
 };
+
+export const getAllUsers = async () => {
+    const response = await  fetch(`${baseURL}/user`,
+        {method: 'GET', headers: {
+        'Content-Type': 'application/json-patch+json',
+    },})
+    return response.json();
+}
+
+export const deleteUser = async (id) => {
+    await fetch(`${baseURL}/user/delete/${id}`,
+        {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json-patch+json',
+            }},
+        )
+}
