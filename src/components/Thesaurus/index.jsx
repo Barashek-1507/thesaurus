@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
-import Thesaurus from 'thesaurus-tree';
-import Tree from 'react-d3-tree';
+import {Thesaurus} from 'thesaurus-tree';
 import SearchInput from "../SearchInpit";
 
-
-
 const ThesaurusElem = () => {
+
     useEffect(() => {
         console.log(Thesaurus)
     }, []);
@@ -89,7 +87,7 @@ const ThesaurusElem = () => {
             ]}
     return(
         <div style={{ width: '100em', height: '60em', border: '1px solid black'}}>
-            <Thesaurus data={orgChart} nodeSize={{x: 120, y: 120}}></Thesaurus>
+            <Thesaurus text={orgChart}></Thesaurus>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 {
   "name": "thesaurus-tree",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "dependencies": {
     "react-d3-tree": "^3.3.2"
   }

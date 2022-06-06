@@ -1,5 +1,5 @@
 var Tree = require("react-d3-tree");
 
-console.log(this)
+var Thesaurus = <Tree />
 
-module.exports = Tree;
+module.exports = Thesaurus;
