@@ -1,0 +1,932 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Thesaurus component should renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "border": "1px solid black",
+      "height": "60em",
+      "width": "100em",
+    }
+  }
+>
+  <div
+    className="rd3t-tree-container rd3t-grabbable"
+  >
+    <style>
+      
+/* Tree */
+.rd3t-tree-container {
+  width: 100%;
+  height: 100%;
+}
+
+.rd3t-grabbable {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+.rd3t-grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+/* Node */
+.rd3t-node {
+  cursor: pointer;
+  fill: #777;
+  stroke: #000;
+  stroke-width: 2;
+}
+
+.rd3t-leaf-node {
+  cursor: pointer;
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 1;
+}
+
+.rd3t-label__title {
+  fill: #000;
+  stroke: none;
+  font-weight: bolder;
+}
+
+.rd3t-label__attributes {
+  fill: #777;
+  stroke: none;
+  font-weight: bolder;
+  font-size: smaller;
+}
+
+/* Link */
+.rd3t-link {
+  fill: none;
+  stroke: #000;
+}
+
+    </style>
+    <svg
+      className="rd3t-svg rd3t-svg-479b39e9-5905-4575-bb28-e84d22d38fb6 "
+      height="100%"
+      width="100%"
+    >
+      <g
+        className="rd3t-g rd3t-g-0d819c87-f29f-4db9-b7b3-6c4411ed5493"
+        transform="translate(0,0) scale(1)"
+      >
+        <path
+          className="rd3t-link"
+          d="M0,0C60,0,60,-412.5,120,-412.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M0,0C60,0,60,292.5,120,292.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M0,0C60,0,60,412.5,120,412.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M120,-412.5C180,-412.5,180,-817.5,240,-817.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M120,-412.5C180,-412.5,180,-457.5,240,-457.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M120,-412.5C180,-412.5,180,-7.5,240,-7.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M120,292.5C180,292.5,180,232.5,240,232.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M120,292.5C180,292.5,180,352.5,240,352.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M240,-817.5C300,-817.5,300,-877.5,360,-877.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M240,-817.5C300,-817.5,300,-757.5,360,-757.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M240,-457.5C300,-457.5,300,-517.5,360,-517.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M240,-457.5C300,-457.5,300,-397.5,360,-397.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M240,-7.5C300,-7.5,300,-157.5,360,-157.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M240,-7.5C300,-7.5,300,142.5,360,142.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M360,-157.5C420,-157.5,420,-157.5,480,-157.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M360,142.5C420,142.5,420,82.5,480,82.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M360,142.5C420,142.5,420,202.5,480,202.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M480,-157.5C540,-157.5,540,-157.5,600,-157.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <path
+          className="rd3t-link"
+          d="M480,82.5C540,82.5,540,82.5,600,82.5"
+          onClick={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <g
+          className="rd3t-node"
+          id="3c7bc647-b53d-42d5-a777-d1bcb7e06a70"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(0,0)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              ...
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-node"
+          id="8191752c-ebbe-4b46-bf77-a53bec144fb0"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(0,0)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Хордовые
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-node"
+          id="00faa1ac-9cdc-47c7-9743-cfb85bc99e07"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(0,0)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Членистоногие
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-leaf-node"
+          id="1c3631d9-18b4-4cfd-9c0c-b7183558a034"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(0,0)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Черви
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-node"
+          id="8b727d24-e79f-4b57-b25e-54fa0aefa7cc"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(120,-412.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Земноводные
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-node"
+          id="d7761e75-a15e-40b3-a4f8-1f16b243059d"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(120,-412.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Рыбы
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-node"
+          id="00092972-0d24-4175-841a-77b98a07aaa5"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(120,-412.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Млекопитающие
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-leaf-node"
+          id="28398dca-b4ff-4c43-add1-ae57796e5355"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(120,292.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Насекомые
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-leaf-node"
+          id="40482524-9877-4034-a1c0-29cd03c430e7"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(120,292.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Паукообразные
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-leaf-node"
+          id="219f809f-223f-49b8-b21b-31e30df5e78d"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(240,-817.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Будьдог
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-leaf-node"
+          id="c630ac96-f43f-4600-bffd-f0ad38b2cb28"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(240,-817.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Шпиц
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-leaf-node"
+          id="565ccbdb-3a49-4856-862e-8fda67097633"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(240,-457.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Будьдог
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-leaf-node"
+          id="78d3fd2d-7552-46eb-b154-3fce8268b39a"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(240,-457.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Шпиц
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-node"
+          id="e1304142-b005-4558-a115-4a55d3000282"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(240,-7.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Хищные
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-node"
+          id="7dc983a4-8514-408a-9360-a68253f7018d"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(240,-7.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Грызуны
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-node"
+          id="bb3c9c0b-501b-4448-9f28-8de162303362"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(360,-157.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Псовые
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-node"
+          id="d6f7356c-1c5a-44c3-bbab-5dab23559ddd"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(360,142.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Заячьи
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-leaf-node"
+          id="bb8cbf45-d728-43c3-a14a-947d7f6bc492"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(360,142.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Беличьи
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-leaf-node"
+          id="508d4a2c-7941-47df-bf80-3bb44ad320f8"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(480,-157.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Собака
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+        <g
+          className="rd3t-leaf-node"
+          id="c3eb7ce7-7823-4e3d-a6d1-bef536d424e8"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+          transform="translate(480,82.5)"
+        >
+          <circle
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            r={15}
+          />
+          <g
+            className="rd3t-label"
+          >
+            <text
+              className="rd3t-label__title"
+              textAnchor="start"
+              x={40}
+            >
+              Кролик
+            </text>
+            <text
+              className="rd3t-label__attributes"
+            />
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
