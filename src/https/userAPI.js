@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:1234';
+const baseURL = 'http://localhost:1252';
 
 export const logIn = async (username, password) => {
     const body = JSON.stringify({username, password});

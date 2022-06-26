@@ -21,97 +21,104 @@ const RegistrationPage = () => {
 
     }
     return (
-        <Form
-            name="basic"
-            labelCol={{
-                span: 8,
-            }}
-            wrapperCol={{
-                span: 16,
-            }}
-            initialValues={{
-                remember: true,
-            }}
-            onFinish={onSubmit}
-            onFinishFailed={onFinishFailed}
-            autoComplete="off"
-            className={styles.authForm}
-        >
-            <Form.Item
-                label="Name"
-                name="name"
-                rules={[
-                    {
-                        required: true,
-                        message: `Please input your name!`,
-                    },
-                ]}
-            >
-                <Input
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                />
-            </Form.Item>
-            <Form.Item
-                label="Lastname"
-                name="lastname"
-                rules={[
-                    {
-                        required: true,
-                        message: `Please input your lastname!`,
-                    },
-                ]}
-            >
-                <Input
-                    value={lastname}
-                    onChange={(e) => setLastname(e.target.value)}
-                />
-            </Form.Item>
-            <Form.Item
-                label="Username"
-                name="username"
-                rules={[
-                    {
-                        required: true,
-                        message: `Please input your login!`,
-                    },
-                ]}
-            >
-                <Input
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                />
-            </Form.Item>
-            <Form.Item
-                label="Password"
-                name="password"
-                rules={[
-                    {
-                        required: true,
-                        message: 'Please input your password!',
-                    },
-                ]}
-            >
-                <Input.Password
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
-            </Form.Item>
-            <div>
-                {/*{error ? error : <br />}*/}
-            </div>
-            <br/>
-            <Form.Item
+        <div style={{display: "flex", justifyContent: "center", alignContent: "center"}}>
+            <Form
+                style={{
+                    boxShadow: "4px 4px 4px #1890ff",
+                    border: "2px solid #1890ff",
+                    maxHeight: 400,
+                    maxWidth: 400,
+                    margin: 150,
+                    padding: 20
+                }}
+                name="basic"
+                labelCol={{
+                    span: 8,
+                }}
                 wrapperCol={{
-                    offset: 8,
                     span: 16,
                 }}
+                initialValues={{
+                    remember: true,
+                }}
+                onFinish={onSubmit}
+                onFinishFailed={onFinishFailed}
+                autoComplete="off"
+                className={styles.authForm}
             >
-                <Button type="primary" htmlType="submit">
-                    Submit
-                </Button>
-            </Form.Item>
-        </Form>
+                <Form.Item
+                    label="Имя"
+                    name="name"
+                    rules={[
+                        {
+                            required: true,
+                            message: `Введите ваше имя!`,
+                        },
+                    ]}
+                >
+                    <Input
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                </Form.Item>
+                <Form.Item
+                    label="Фамилия"
+                    name="lastname"
+                    rules={[
+                        {
+                            required: true,
+                            message: `Введите вашу фамилию!`,
+                        },
+                    ]}
+                >
+                    <Input
+                        value={lastname}
+                        onChange={(e) => setLastname(e.target.value)}
+                    />
+                </Form.Item>
+                <Form.Item
+                    label="Логин"
+                    name="username"
+                    rules={[
+                        {
+                            required: true,
+                            message: `Введите ваш логин!`,
+                        },
+                    ]}
+                >
+                    <Input
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+                </Form.Item>
+                <Form.Item
+                    label="Пароль"
+                    name="password"
+                    rules={[
+                        {
+                            required: true,
+                            message: 'Введите пароль!',
+                        },
+                    ]}
+                >
+                    <Input.Password
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </Form.Item>
+                <Form.Item
+                    wrapperCol={{
+                        offset: 8,
+                        span: 16,
+                    }}
+                >
+                    <Button style={{marginRight: 100}} type="primary" htmlType="submit">
+                        Зарегистрироваться
+                    </Button>
+                </Form.Item>
+            </Form>
+        </div>
+
     )
 }
 export default RegistrationPage

@@ -58,12 +58,12 @@ const AdminTable = () => {
             onFilter: (value, record) => record.role.indexOf(value) === 0,
         },
         {
-            title: 'Edit',
+            title: 'Редактировать',
             dataIndex: 'edit',
             key: 'edit',
         },
         {
-            title: 'Delete',
+            title: 'Удалить',
             dataIndex: 'delete',
             key: 'delete',
             render: (text, record) => (<DeleteButton onDelete={() => onHandleDelete(record.user_id)} />),

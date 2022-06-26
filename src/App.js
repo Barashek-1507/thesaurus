@@ -24,10 +24,10 @@ function App() {
         <BrowserRouter>
             {!isAuth ? (
                 <Switch>
-{/*                     <Redirect from="/thesaurus" to="/login" />
+                     <Redirect from="/thesaurus" to="/login" />
                      <Route path="/registration" component={RegistrationPage} />
                      <Route path="/login" component={LoginPage} />
-                     <Redirect from="/" to="/login" />*/}
+                     <Redirect from="/" to="/login" />
 
                     <Route path="/main" component={ThesaurusPage} />
                     <Redirect to="/main" />
@@ -36,12 +36,11 @@ function App() {
                 )
                 : (
                     <Switch>
-                        <Route path="/main" component={Main} />
                         <Route path="/thesaurus" component={ThesaurusPage} />
                         <Route path="/account" component={AccountPage} />
                         <Route path="/admin" component={AdministrationPage} />
                         <Route path="/signOut" component={LogOutPage}/>
-                        <Redirect to="/main" />
+                        <Redirect to="/thesaurus" />
                     </Switch>
                 )}
         </BrowserRouter>

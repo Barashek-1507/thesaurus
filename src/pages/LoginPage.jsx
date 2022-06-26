@@ -21,69 +21,75 @@ const LoginPage = () => {
 
     }
     return (
-        <Form
-            name="basic"
-            labelCol={{
-                span: 8,
-            }}
-            wrapperCol={{
-                span: 16,
-            }}
-            initialValues={{
-                remember: true,
-            }}
-            onFinish={onSubmit}
-            onFinishFailed={onFinishFailed}
-            autoComplete="off"
-            className={styles.authForm}
-        >
-
-            <Form.Item
-                label="Username"
-                name="username"
-                rules={[
-                    {
-                        required: true,
-                        message: `Please input your login!`,
-                    },
-                ]}
-            >
-                <Input
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                />
-            </Form.Item>
-            <Form.Item
-                label="Password"
-                name="password"
-                rules={[
-                    {
-                        required: true,
-                        message: 'Please input your password!',
-                    },
-                ]}
-            >
-                <Input.Password
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
-            </Form.Item>
-            <div>
-                {/*{error ? error : <br />}*/}
-            </div>
-            <br/>
-            <Form.Item
+        <div style={{display: "flex", justifyContent: "center", alignContent: "center"}}>
+            <Form
+                style={{
+                    boxShadow: "4px 4px 4px #1890ff",
+                    border: "2px solid #1890ff",
+                    maxHeight: 400,
+                    maxWidth: 400,
+                    margin: 150,
+                    padding: 20
+                }}
+                name="basic"
+                labelCol={{
+                    span: 8,
+                }}
                 wrapperCol={{
-                    offset: 8,
                     span: 16,
                 }}
+                initialValues={{
+                    remember: true,
+                }}
+                onFinish={onSubmit}
+                onFinishFailed={onFinishFailed}
+                autoComplete="off"
+                className={styles.authForm}
             >
-                <Button type="primary" htmlType="submit">
-                    Submit
-                </Button>
-            </Form.Item>
-            <Link to="/registration">Registration</Link>
-        </Form>
+
+                <Form.Item
+                    label="Логин"
+                    name="username"
+                    rules={[
+                        {
+                            required: true,
+                            message: `Введите логин`,
+                        },
+                    ]}
+                >
+                    <Input
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+                </Form.Item>
+                <Form.Item
+                    label="Пароль"
+                    name="password"
+                    rules={[
+                        {
+                            required: true,
+                            message: 'Введите пароль',
+                        },
+                    ]}
+                >
+                    <Input.Password
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </Form.Item>
+                <Form.Item
+                    wrapperCol={{
+                        offset: 8,
+                        span: 16,
+                    }}
+                >
+                    <Button type="primary" htmlType="submit" style={{marginRight: 100}}>
+                        Войти
+                    </Button>
+                </Form.Item>
+                <Link to="/registration">Зарегистрироваться</Link>
+            </Form>
+        </div>
     )
 }
 export default LoginPage

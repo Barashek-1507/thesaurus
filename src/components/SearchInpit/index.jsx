@@ -1,9 +1,8 @@
 import React from 'react';
 import AsyncSelect from 'react-select/async';
 import {getConceptByWord} from "../../https/thesaurusAPI";
-const onSearch = value => console.log(value);
 
-function SearchInput() {
+function SearchInput({setValue}) {
     const promiseOptions = (inputValue) =>
         new Promise((resolve) => {
             setTimeout(() => {
@@ -13,6 +12,7 @@ function SearchInput() {
 
     return (
         <AsyncSelect
+            onChange={(label) => setValue(label.value)}
             isClearable
             isSearchable={true}
             loadOptions={promiseOptions}

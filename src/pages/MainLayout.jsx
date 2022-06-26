@@ -16,23 +16,23 @@ const MainLayout = ({children}) => {
                 <Menu theme="dark" mode="horizontal">
                     <Menu.Item key={0}>
                         <NavLink to="/thesaurus">
-                            Thesaurus
+                            Тезаурус
                         </NavLink>
                     </Menu.Item>
                     <Menu.Item key={1}>
                         <NavLink to="/account">
-                            My account
+                            Мой аккаунт
                         </NavLink>
                     </Menu.Item>
                     <Menu.Item key={2}>
                         <NavLink to="/signOut">
-                            Sign out
+                            Выход
                         </NavLink>
                     </Menu.Item>
                     {isAdmin &&
                         <Menu.Item key={3}>
                             <NavLink to="/admin">
-                                Administration
+                                Администрирование
                             </NavLink>
                         </Menu.Item>
                     }
